@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-size: 100%;
+  color: #3C4858;
+  width: 350px;
+  max-height: 500px;
+}
+
+.header {
+  background: #F9FAFC;
+  height: 90px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 12px;
+  font-weight: 500;
+}
+
+.main {
+  font-size: 14px;
+  padding: 0 12px;
+}
+
+.result {
+  max-height: 400px;
+  flex: 1;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.callstack {
+  font-size: 15px;
+}
+
+button.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all .15s ease;
+}
+
+button.btn.btn-sm {
+  padding: .4rem .8rem;
+  font-size: .8rem;
+  border-radius: .2rem;
+  height: 30px;
+}
+
+button.btn.btn-primary, button.btn.btn-primary:active:focus {
+  color: #fff;
+  background-color: #45C8F1;
+  border-color: #45C8F1;
+}
+
+button.btn.btn-outline-primary, button.btn.btn-outline-primary:active:focus {
+  color: #45C8F1;
+  background-color: transparent;
+  border-color: #45C8F1;
+}
+
+button.btn.btn-danger, button.btn.btn-danger:active:focus {
+  color: #fff;
+  background-color: #FF4949;
+  border-color: #FF4949;
+}
+
+button.btn.btn-outline-danger, button.btn.btn-outline-danger:active:focus {
+  color: #FF4949;
+  background-color: transparent;
+  border-color: #FF4949;
+}

@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+.idea
+build
+dist
+dist-zip
+*.pem
+*.crx
+tmp/

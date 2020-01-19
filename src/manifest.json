@@ -1,0 +1,34 @@
+{
+  "name": "DOM based XSS finder",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "A Chrome extension for finding DOM based XSS vulnerabilities",
+  "permissions": [
+    "storage",
+    "webNavigation",
+    "tabs",
+    "*://*/",
+    "debugger",
+    "unlimitedStorage"
+  ],
+  "icons" : {
+    "16": "images/app_icon_16.png",
+    "128": "images/app_icon_128.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "browser_action": {
+    "default_icon": "images/icon-black.png",
+    "default_title": "DOM based XSS finder",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}

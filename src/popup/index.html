@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+</head>
+<body>
+<div class="header border-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-10">DOM based XSS finder</div>
+      <div class="col-2">
+<!--        <a href="#" id="setting-button"><img src="../images/setting.svg" alt="setting" width="18px"></a>-->
+      </div>
+    </div>
+    <div class="row pt-2">
+      <div class="col">
+        <div id="enable-button">
+          <button class="btn btn-sm btn-primary float-left"><i class="far fa-play-circle"
+                                                               style="font-size: 16px;"></i>&nbsp;Start
+          </button>
+        </div>
+        <div class="d-none" id="disable-button">
+          <button class="btn btn-danger btn-sm float-left">
+            <div class="spinner-border spinner-border-sm" role="status">
+              <span class="sr-only">...</span>
+            </div>&nbsp;Stop
+          </button>
+        </div>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-sm btn-danger float-right" id="remove-all-button">Remove All</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main">
+  <div class="result">
+    <div class="container" id="container-result">
+      <template id="row-result-template">
+        <div class="row flex-nowrap border-bottom pt-1 pb-1 row-result">
+          <div class="col-1 col-result-id"></div>
+          <div class="col-7 text-break">
+            <div class="text-secondary col-result-url"></div>
+          </div>
+          <div class="col-4">
+            <div class="mt-1">
+              <button type="button" class="btn btn-sm btn-primary btn-outline-primary result-detail-button">Detail
+              </button>
+            </div>
+            <div class="mt-1">
+              <button type="button" class="btn btn-sm btn-danger btn-outline-danger result-remove-button">Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
+</div>
+<!-- built files will be auto injected -->
+</body>
+</html>
