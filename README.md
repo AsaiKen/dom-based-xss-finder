@@ -1,10 +1,8 @@
 # DOM based XSS finder
 
-"DOM based XSS finder" is a Chrome extension that finds DOM based XSS vulnerabilities.
+"DOM based XSS finder" is a Chrome extension that finds DOM based XSS vulnerabilities. Install it from the [Chrome Webstore](https://chrome.google.com/webstore/detail/dom-based-xss-finder/ngmdldjheklkdchgkgnjoaabgejcnnoi). 
 
-Finding DOM based XSS can be bothersome. This extension can be helpful. 
-
-This extension has the following features:
+Finding DOM based XSS can be bothersome. This extension can be helpful. This extension has the following features:
 
 - Notify if a user-input such as "location.href" leads to a dangerous JavaScript function such as "eval".
 - Fuzzing for user-inputs such as query, hash and referrer.
