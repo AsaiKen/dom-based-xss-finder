@@ -10,6 +10,9 @@ Finding DOM based XSS can be bothersome. This extension can be helpful. This ext
 
 ## Usage
 
+**This tool is a dynamic JavaScript tracer, not a static JavaScript scanner. So you must execute JavaScript by manual
+crawling with this extension starting.**
+
 - Click the icon and hit "Start".
 - Browse pages that you want to scan.
 - If the extension finds a possible vulnerability of DOM based XSS, the extension shows a entry for that url.
